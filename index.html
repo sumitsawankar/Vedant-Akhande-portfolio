@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vedant Akhande - Content Creator & Video Producer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emerald: {
+              50:'#ecfdf5',100:'#d1fae5',200:'#a7f3d0',300:'#6ee7b7',400:'#34d399',
+              500:'#10b981',600:'#059669',700:'#047857',800:'#065f46',900:'#064e3b'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    body { font-family: 'Poppins', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #064e3b 0%, #047857 50%, #10b981 100%); }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(16, 185, 129, 0.2); }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <h1 class="text-2xl font-bold text-emerald-700">Vedant Akhande</h1>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#home" class="text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+            <a href="#about" class="text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+            <a href="#services" class="text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+            <a href="#skills" class="text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Skills</a>
+            <a href="#instagram" class="text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Instagram</a>
+            <a href="#contact" class="bg-emerald-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-emerald-700 transition-colors">Contact</a>
+          </div>
+        </div>
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" class="text-gray-700 hover:text-emerald-600">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#home" class="block text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-md text-base font-medium">Home</a>
+        <a href="#about" class="block text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-md text-base font-medium">About</a>
+        <a href="#services" class="block text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-md text-base font-medium">Services</a>
+        <a href="#skills" class="block text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-md text-base font-medium">Skills</a>
+        <a href="#instagram" class="block text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-md text-base font-medium">Instagram</a>
+        <a href="#contact" class="block text-gray-700 hover:text-emerald-600 px-3 py-2 rounded-md text-base font-medium">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="gradient-bg pt-20 pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+          <span class="text-emerald-200">Vedant Akhande</span>
+        </h1>
+        <p class="text-xl text-emerald-100 mb-8 max-w-3xl mx-auto">
+          Viral Content Creator • Social Media Management • Standup Comedian • Video Creation • Your Brand's Best Friend
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#contact" class="bg-white text-emerald-700 px-8 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-colors">
+            Start Your Project
+          </a>
+          <a href="https://www.instagram.com/vedant____294/" target="_blank" rel="noopener noreferrer" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-emerald-700 transition-colors">
+            View Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            About <span class="text-emerald-600">Vedant Akhande</span>
+          </h2>
+          <p class="text-lg text-gray-600 mb-6">
+            Hey there! I'm Vedant Akhande, a passionate content creator and standup comedian from Nagpur, India who lives and breathes viral comedy content. What started as performing standup comedy and making people laugh has turned into my mission to help brands connect with their audience through humor and authentic storytelling.
+          </p>
+          <p class="text-lg text-gray-600 mb-6">
+            I specialize in creating funny, relatable content that doesn't just get views – it gets results. Whether it's a brand campaign that needs that perfect comedic touch or a social media strategy that makes people stop scrolling, I bring creativity, professionalism, and a deep understanding of what makes content go viral.
+          </p>
+          <div class="grid grid-cols-2 gap-6 mb-6">
+            <div class="text-center">
+              <div class="text-2xl font-bold text-emerald-600">220K+</div>
+              <div class="text-gray-600">Instagram Views</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-emerald-600">Ready</div>
+              <div class="text-gray-600">For New Projects</div>
+            </div>
+          </div>
+          <p class="text-lg text-gray-600 mb-6">
+            I'm actively looking to collaborate with brands and businesses who want to make their mark with viral content. My approach is simple: understand your brand, know your audience, and create content that feels natural while delivering your message.
+          </p>
+          <a href="https://www.instagram.com/vedant____294/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-semibold">
+            Follow My Journey on Instagram
+            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="relative">
+          <div class="bg-emerald-100 rounded-2xl p-8 text-center">
+            <div class="text-6xl mb-4">🎬</div>
+            <h3 class="text-xl font-semibold text-emerald-800 mb-2">Content Creator</h3>
+            <p class="text-emerald-700">Specializing in viral funny content</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 bg-emerald-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Skills</h2>
+        <p class="text-lg text-emerald-200 max-w-2xl mx-auto">
+          Crisp photography and cinematic video editing that make your brand stand out.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Photography -->
+        <div class="bg-white/90 backdrop-blur rounded-xl p-8 shadow-xl card-hover">
+          <div class="flex items-center mb-4">
+            <svg class="w-10 h-10 text-emerald-600 mr-3" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M4 7a3 3 0 00-3 3v7a3 3 0 003 3h16a3 3 0 003-3v-7a3 3 0 00-3-3h-2.382a1 1 0 01-.894-.553l-.724-1.447A2 2 0 0014.118 4H9.882a2 2 0 00-1.882 1.053l-.724 1.447A1 1 0 016.382 7H4zm8 3a5 5 0 110 10 5 5 0 010-10zm0 2.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5z"/>
+            </svg>
+            <h3 class="text-xl font-semibold text-gray-900">Photography</h3>
+          </div>
+          <p class="text-gray-600 mb-4">Clean, high-impact images for campaigns, products, and creators.</p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>• Portraits & Lifestyle</li>
+            <li>• Products & Food</li>
+            <li>• Event Coverage</li>
+            <li>• Lighting & Composition</li>
+            <li>• Color Grading</li>
+          </ul>
+        </div>
+
+        <!-- Video Editing -->
+        <div class="bg-white/90 backdrop-blur rounded-xl p-8 shadow-xl card-hover">
+          <div class="flex items-center mb-4">
+            <svg class="w-10 h-10 text-emerald-600 mr-3" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M4 5a2 2 0 00-2 2v10a2 2 0 002 2h9a2 2 0 002-2V7a2 2 0 00-2-2H4zm15.553 3.106L16 10v2l3.553 1.894A1 1 0 0021 13.999V8.001a1 1 0 00-1.447-.895z"/>
+            </svg>
+            <h3 class="text-xl font-semibold text-gray-900">Video Editing</h3>
+          </div>
+          <p class="text-gray-600 mb-4">Dynamic edits built for views, saves, and shares.</p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>• Reels & Shorts</li>
+            <li>• Cuts, Transitions, Speed Ramps</li>
+            <li>• Captions & Motion Graphics</li>
+            <li>• Sound Design</li>
+            <li>• Format Optimization (9:16, 1:1)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white/90 rounded-xl p-6 shadow">
+          <div class="flex justify-between text-sm text-gray-700 mb-2">
+            <span>Photography</span><span>90%</span>
+          </div>
+          <div class="h-3 bg-emerald-100 rounded-full overflow-hidden">
+            <div class="h-full bg-emerald-600 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="bg-white/90 rounded-xl p-6 shadow">
+          <div class="flex justify-between text-sm text-gray-700 mb-2">
+            <span>Video Editing</span><span>92%</span>
+          </div>
+          <div class="h-3 bg-emerald-100 rounded-full overflow-hidden">
+            <div class="h-full bg-emerald-600 rounded-full" style="width: 92%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="#contact" class="inline-block bg-white text-emerald-700 hover:bg-emerald-50 font-semibold px-8 py-3 rounded-lg shadow">
+          Hire Me for a Shoot
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">My Services</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          From concept to creation, I provide comprehensive video production services that deliver results.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+          <div class="text-4xl mb-4">📹</div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Video Production</h3>
+          <p class="text-gray-600 mb-4">Complete video shoots from planning to post-production with professional equipment and creative direction.</p>
+          <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Concept Development</li>
+            <li>• Professional Filming</li>
+            <li>• Post-Production Editing</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+          <div class="text-4xl mb-4">😂</div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Comedy Content</h3>
+          <p class="text-gray-600 mb-4">Funny, engaging content that captures attention and drives engagement across social media platforms.</p>
+          <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Viral Content Creation</li>
+            <li>• Trend Analysis</li>
+            <li>• Audience Engagement</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+          <div class="text-4xl mb-4">📱</div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Social Media Management</h3>
+          <p class="text-gray-600 mb-4">End-to-end management for Instagram, YouTube, and more.</p>
+          <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Strategy & Content Calendar</li>
+            <li>• Posting & Scheduling</li>
+            <li>• Community Management</li>
+            <li>• Influencer Partnerships</li>
+            <li>• Analytics & Reporting</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Brand Campaigns</h3>
+          <p class="text-gray-600 mb-4">Strategic content campaigns that align with your brand voice and marketing objectives.</p>
+          <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Campaign Strategy</li>
+            <li>• Brand Integration</li>
+            <li>• Performance Analytics</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+          <div class="text-4xl mb-4">✂️</div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Video Editing</h3>
+          <p class="text-gray-600 mb-4">Professional editing services to transform raw footage into polished, engaging content.</p>
+          <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Color Correction</li>
+            <li>• Motion Graphics</li>
+            <li>• Sound Design</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+          <div class="text-4xl mb-4">🎤</div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Standup Comedy</h3>
+          <p class="text-gray-600 mb-4">Live standup comedy performances for events, corporate shows, and entertainment venues.</p>
+          <ul class="text-sm text-gray-500 space-y-1">
+            <li>• Corporate Events</li>
+            <li>• Private Shows</li>
+            <li>• Comedy Nights</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Fullscreen Page -->
+  <section id="instagram" class="relative min-h-screen flex items-center justify-center px-6 py-24 overflow-hidden bg-gray-950">
+    <style>
+      /* Scoped only for Instagram page */
+      #instagram .blob { position:absolute; filter: blur(60px); opacity:.35; mix-blend: screen; border-radius:50%; }
+      #instagram .b1 { width:520px; height:520px; background:#10b981; top:-120px; left:-120px; animation:instaFloat1 18s ease-in-out infinite; }
+      #instagram .b2 { width:640px; height:640px; background:#34d399; bottom:-200px; right:-180px; animation:instaFloat2 22s ease-in-out infinite; }
+      #instagram .b3 { width:460px; height:460px; background:#059669; top:45%; left:8%; animation:instaFloat3 20s ease-in-out infinite; }
+      @keyframes instaFloat1 { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(45px,25px) scale(1.06)} }
+      @keyframes instaFloat2 { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(-50px,-30px) scale(1.08)} }
+      @keyframes instaFloat3 { 0%,100%{transform:translate(0,0) scale(1)} 50%{transform:translate(35px,-35px) scale(.94)} }
+      #instagram .glass { background: rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.08); backdrop-filter: blur(10px); }
+      #instagram .shimmer { background: linear-gradient(90deg, rgba(209,250,229,.7) 0%, #ffffff 20%, rgba(209,250,229,.7) 40%); -webkit-background-clip:text; background-clip:text; color:transparent; background-size:200% 100%; animation: instaShine 5s linear infinite; }
+      @keyframes instaShine { 0%{background-position:200% 0} 100%{background-position:0% 0} }
+    </style>
+
+    <!-- Animated blobs background -->
+    <div class="absolute inset-0">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+    </div>
+
+    <!-- Content card -->
+    <div class="relative z-10 glass rounded-2xl max-w-3xl w-full p-8 md:p-12 text-center text-white">
+      <div class="text-6xl mb-4">📸</div>
+      <h2 class="text-3xl md:text-5xl font-bold mb-4"><span class="text-emerald-300">@vedant____294</span></h2>
+      <p class="text-base md:text-xl text-emerald-100 shimmer mb-6">Daily laughs, reels, BTS, and tips to grow on social.</p>
+      <p class="text-sm md:text-base text-emerald-200/90 mb-8">Follow for comedy, content creation, and standup moments straight from Nagpur.</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="https://www.instagram.com/vedant____294/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-400 text-emerald-950 font-semibold px-7 py-3 rounded-lg transition-colors">
+          Visit Instagram Profile
+        </a>
+        <a href="#home" class="inline-flex items-center justify-center border border-white/60 text-white px-7 py-3 rounded-lg hover:bg-white hover:text-emerald-900 transition-colors">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 gradient-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Work With You!</h2>
+        <p class="text-lg text-emerald-100 max-w-2xl mx-auto">
+          I'm looking for my first clients to create viral content together. Let's make your brand the talk of the internet!
+        </p>
+      </div>
+      <div class="max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Contact Info -->
+          <div class="bg-white rounded-xl p-8 shadow-xl">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Let's Connect</h3>
+            <div class="space-y-6">
+              <div class="flex items-center">
+                <div class="bg-emerald-100 p-3 rounded-lg mr-4">
+                  <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Phone</h4>
+                  <a href="tel:+917020879811" class="text-emerald-600 hover:text-emerald-700">+91 70208 79811</a>
+                </div>
+              </div>
+
+              <div class="flex items-center">
+                <div class="bg-emerald-100 p-3 rounded-lg mr-4">
+                  <svg class="w-6 h-6 text-emerald-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Instagram</h4>
+                  <a href="https://www.instagram.com/vedant____294/" target="_blank" rel="noopener noreferrer" class="text-emerald-600 hover:text-emerald-700">@vedant____294</a>
+                </div>
+              </div>
+
+              <div class="flex items-center">
+                <div class="bg-emerald-100 p-3 rounded-lg mr-4">
+                  <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Location</h4>
+                  <p class="text-gray-600">Nagpur, India</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 p-6 bg-emerald-50 rounded-lg">
+              <h4 class="font-semibold text-emerald-800 mb-2">Looking for My First Clients!</h4>
+              <p class="text-emerald-700 text-sm">I'm excited to work with new brands and create amazing content together. Special rates for early collaborators - let's make something viral!</p>
+            </div>
+          </div>
+
+          <!-- WhatsApp Contact -->
+          <div class="bg-white rounded-xl p-8 shadow-xl">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6">WhatsApp Me!</h3>
+            <div class="text-center">
+              <div class="text-6xl mb-6">💬</div>
+              <p class="text-lg text-gray-600 mb-8">
+                Ready to create viral content together? Let's chat on WhatsApp! I respond quickly and we can discuss your project ideas right away.
+              </p>
+              <a href="https://wa.me/+917020879811?text=Hi%20Vedant!%20I%20saw%20your%20website%20and%20I'm%20interested%20in%20working%20with%20you%20for%20content%20creation.%20Let's%20discuss!"
+                 target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors text-lg shadow-lg">
+                <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.785"/>
+                </svg>
+                Chat on WhatsApp
+              </a>
+              <p class="text-sm text-gray-500 mt-4">
+                Click the button above to start a conversation with me on WhatsApp. I'm usually online and respond within minutes!
+              </p>
+            </div>
+
+            <div class="mt-8 p-6 bg-green-50 rounded-lg">
+              <h4 class="font-semibold text-green-800 mb-2">💡 What to mention in your message:</h4>
+              <ul class="text-green-700 text-sm space-y-1">
+                <li>• Your brand/business name</li>
+                <li>• Type of content you need</li>
+                <li>• Your timeline and budget</li>
+                <li>• Any specific ideas you have</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why Work With Me -->
+        <div class="mt-12 text-white">
+          <h3 class="text-2xl font-semibold mb-8 text-center">Why Work With Me?</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="text-center">
+              <div class="text-4xl mb-4">🚀</div>
+              <h4 class="font-semibold mb-2">Viral Content Expertise</h4>
+              <p class="text-emerald-100 text-sm">I understand what makes content go viral and create videos that get real results for your brand.</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl mb-4">⚡</div>
+              <h4 class="font-semibold mb-2">Quick Turnaround</h4>
+              <p class="text-emerald-100 text-sm">Fast delivery without compromising quality. Your content will be ready when you need it most.</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl mb-4">💎</div>
+              <h4 class="font-semibold mb-2">Professional Quality</h4>
+              <p class="text-emerald-100 text-sm">High-quality production that makes your brand look professional and trustworthy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h3 class="text-2xl font-bold text-emerald-400 mb-2">Vedant Akhande</h3>
+        <p class="text-gray-400 mb-4">Content Creator & Video Producer</p>
+        <div class="flex justify-center space-x-4">
+          <a href="https://www.instagram.com/vedant____294/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-emerald-400 transition-colors" aria-label="Instagram">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+        </div>
+        <p class="text-gray-500 text-sm mt-4">© 2024 Vedant Akhande. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            mobileMenu.classList.add('hidden');
+          }
+        }
+      });
+    });
+
+    // Subtle scroll effect on nav
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 100) {
+        nav.classList.add('bg-white/95', 'backdrop-blur-sm');
+      } else {
+        nav.classList.remove('bg-white/95', 'backdrop-blur-sm');
+      }
+    });
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98227082973d1432',t:'MTc1ODM4MzAxNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
